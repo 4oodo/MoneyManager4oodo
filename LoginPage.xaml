@@ -17,8 +17,10 @@
                        FontSize="24px"
                        Foreground="{StaticResource TextColor}"/>
 
-            <TextBox Style="{StaticResource TextBoxStyle}"/>
-            <PasswordBox Style="{StaticResource TextBoxStyle}"/>
+            <TextBox Style="{StaticResource TextBoxStyle}"
+                     Name="LoginTextBox"/>
+            <PasswordBox Style="{StaticResource TextBoxStyle}"
+                         Name="PasswordTextBox"/>
             <Button Style="{StaticResource ButtonStyle}"
                     Content="Войти"
                     Click="Login_Button_Click"/>

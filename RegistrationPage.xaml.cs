@@ -30,7 +30,7 @@ namespace MoneyManager4oodo
         {
             bool emptyField = SurnameTextBox.Text.Equals("") || NameTextBox.Text.Equals("") || 
                               LoginTextBox.Text.Equals("") || PasswordBox.Password.Equals("");
-            return emptyField; 
+            return !emptyField; 
         }
 
 
