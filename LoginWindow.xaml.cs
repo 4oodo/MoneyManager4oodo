@@ -18,11 +18,12 @@ namespace MoneyManager4oodo
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginWindow : Window
     {
-        public MainWindow()
+        public LoginWindow()
         {
             InitializeComponent();
+            LoginFrame.Content = new LoginPage();
         }
     }
 }

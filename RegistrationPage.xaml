@@ -1,0 +1,41 @@
+﻿<Page x:Class="MoneyManager4oodo.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:MoneyManager4oodo"
+      mc:Ignorable="d"
+      Title="RegistrationPage" Height="450" Width="800">
+    <Grid>
+        <StackPanel Grid.Row="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <TextBlock Text="Регистрация"
+                       HorizontalAlignment="Center"
+                       FontSize="24px"
+                       Foreground="{StaticResource TextColor}"/>
+
+            <TextBox Style="{StaticResource TextBoxStyle}"
+                     Name="NameTextBox"
+                     Text="Введите имя"/>
+            <TextBox Style="{StaticResource TextBoxStyle}"
+                     Name="SurnameTextBox"
+                     Text="Введите фамилию"/>
+            <TextBox Style="{StaticResource TextBoxStyle}"
+                     Name="LoginTextBox"
+                     Text="Введите логин"/>
+            <PasswordBox Style="{StaticResource TextBoxStyle}"
+                         Name="PasswordBox"
+                         />
+            <Button Style="{StaticResource ButtonStyle}"
+                    Content="Зарегистрироваться"
+                    Click="Registrate_Button_Click" />
+            <TextBlock Text="Вернутся назад"
+                       Foreground="{StaticResource TextColor}"
+                       HorizontalAlignment="Center"
+                       Margin="0 10px 0 0"
+                       Cursor="Hand" 
+                       MouseDown="GoBackTextClickMouseDown" />
+        </StackPanel>
+    </Grid>
+</Page>

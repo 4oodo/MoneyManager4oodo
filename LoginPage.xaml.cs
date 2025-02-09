@@ -28,9 +28,14 @@ namespace MoneyManager4oodo
         
         private void Login_Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow mainWindow = new MainWindow();
-            mainWindow.Show();
+            ManagerWindow managerWindow = new ManagerWindow();
+            managerWindow.Show();
             //this.Close();
+        }
+
+        private void RegistrateTextClickMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new RegistrationPage());
         }
     }
 }

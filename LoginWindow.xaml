@@ -1,4 +1,4 @@
-﻿<Window x:Class="MoneyManager4oodo.MainWindow"
+﻿<Window x:Class="MoneyManager4oodo.LoginWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -21,7 +21,8 @@
                    Foreground="{StaticResource TextColor}"/>
 
         <Frame x:Name="LoginFrame"
-               Grid.Row="1"/>
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"/>
         
     </Grid>
 </Window>
